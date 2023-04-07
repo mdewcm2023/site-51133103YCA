@@ -1,0 +1,508 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsimde_site</title>
+        <meta charset="utf-8">
+<meta property="head" content="H3">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>51133103 網際內容管理</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">51133103 網際內容管理</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='AL East.html'>AL East</a><ul class='dropdown'><li class='has-children'><a href='New York Yankees.html'>New York Yankees</a><ul class='dropdown'><li><a href='2023 Roster-1.html'>2023 Roster-1</a><li><a href='Star Player.html'>Star Player</a></li></ul><li class='has-children'><a href='Boston Red Sox.html'>Boston Red Sox</a><ul class='dropdown'><li><a href='2023 Roster-2.html'>2023 Roster-2</a></li></ul><li class='has-children'><a href='Baltimore Orioles.html'>Baltimore Orioles</a><ul class='dropdown'><li><a href='2023 Roster-3.html'>2023 Roster-3</a></li></ul><li class='has-children'><a href='Toronto Blue Jays.html'>Toronto Blue Jays</a><ul class='dropdown'><li><a href='2023 Roster-4.html'>2023 Roster-4</a></li></ul><li><a href='Tampa Bay Rays.html'>Tampa Bay Rays</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Toronto Blue Jays << <a href='Toronto Blue Jays.html'>Previous</a> <a href='Tampa Bay Rays.html'>Next</a> >> Tampa Bay Rays<br /><h1>2023 Roster-4</h1>
+<table class="roster__table">
+<thead>
+<tr>
+<td colspan="2">Pitchers</td>
+<td class="bat-throw">B/T</td>
+<td class="height">Ht</td>
+<td class="weight">Wt</td>
+<td class="birthday">DOB</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Anthony Bass" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/542914/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/anthony-bass-542914">Anthony Bass</a><span> </span><span class="jersey">52</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 2"</td>
+<td class="weight">205</td>
+<td class="birthday">11/01/1987</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Chris Bassitt" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/605135/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/chris-bassitt-605135">Chris Bassitt</a><span> </span><span class="jersey">40</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 5"</td>
+<td class="weight">217</td>
+<td class="birthday">02/22/1989</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="José Berríos" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/621244/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/jose-berrios-621244">José Berríos</a><span> </span><span class="jersey">17</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 0"</td>
+<td class="weight">205</td>
+<td class="birthday">05/27/1994</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Adam Cimber" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/643256/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/adam-cimber-643256">Adam Cimber</a><span> </span><span class="jersey">90</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 3"</td>
+<td class="weight">195</td>
+<td class="birthday">08/15/1990</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Yimi García" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/554340/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/yimi-garcia-554340">Yimi García</a><span> </span><span class="jersey">93</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 1"</td>
+<td class="weight">230</td>
+<td class="birthday">08/18/1990</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Kevin Gausman" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/592332/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/kevin-gausman-592332">Kevin Gausman</a><span> </span><span class="jersey">34</span></td>
+<td class="bat-throw">L/R</td>
+<td class="height">6' 2"</td>
+<td class="weight">205</td>
+<td class="birthday">01/06/1991</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Yusei Kikuchi" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/579328/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/yusei-kikuchi-579328">Yusei Kikuchi</a><span> </span><span class="jersey">16</span></td>
+<td class="bat-throw">L/L</td>
+<td class="height">6' 0"</td>
+<td class="weight">210</td>
+<td class="birthday">06/17/1991</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Alek Manoah" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/666201/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/alek-manoah-666201">Alek Manoah</a><span> </span><span class="jersey">6</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 6"</td>
+<td class="weight">285</td>
+<td class="birthday">01/09/1998</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Tim Mayza" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/641835/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/tim-mayza-641835">Tim Mayza</a><span> </span><span class="jersey">58</span></td>
+<td class="bat-throw">L/L</td>
+<td class="height">6' 3"</td>
+<td class="weight">215</td>
+<td class="birthday">01/15/1992</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Zach Pop" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/647315/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/zach-pop-647315">Zach Pop</a><span> </span><span class="jersey">56</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 4"</td>
+<td class="weight">220</td>
+<td class="birthday">09/20/1996</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Trevor Richards" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/670950/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/trevor-richards-670950">Trevor Richards</a><span> </span><span class="jersey">33</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 2"</td>
+<td class="weight">205</td>
+<td class="birthday">05/15/1993</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Jordan Romano" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/605447/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/jordan-romano-605447">Jordan Romano</a><span> </span><span class="jersey">68</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 5"</td>
+<td class="weight">210</td>
+<td class="birthday">04/21/1993</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Erik Swanson" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/657024/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/erik-swanson-657024">Erik Swanson</a><span> </span><span class="jersey">50</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 3"</td>
+<td class="weight">225</td>
+<td class="birthday">09/04/1993</td>
+</tr>
+</tbody>
+</table>
+<table class="roster__table">
+<thead>
+<tr>
+<td colspan="2">Catchers</td>
+<td class="bat-throw">B/T</td>
+<td class="height">Ht</td>
+<td class="weight">Wt</td>
+<td class="birthday">DOB</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Danny Jansen" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/643376/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/danny-jansen-643376">Danny Jansen</a><span> </span><span class="jersey">9</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 2"</td>
+<td class="weight">215</td>
+<td class="birthday">04/15/1995</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Alejandro Kirk" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/672386/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/alejandro-kirk-672386">Alejandro Kirk</a><span> </span><span class="jersey">30</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">5' 8"</td>
+<td class="weight">245</td>
+<td class="birthday">11/06/1998</td>
+</tr>
+</tbody>
+</table>
+<table class="roster__table">
+<thead>
+<tr>
+<td colspan="2">Infielders</td>
+<td class="bat-throw">B/T</td>
+<td class="height">Ht</td>
+<td class="weight">Wt</td>
+<td class="birthday">DOB</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Brandon Belt" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/474832/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/brandon-belt-474832">Brandon Belt</a><span> </span><span class="jersey">13</span></td>
+<td class="bat-throw">L/L</td>
+<td class="height">6' 3"</td>
+<td class="weight">230</td>
+<td class="birthday">04/20/1988</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Bo Bichette" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/666182/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/bo-bichette-666182">Bo Bichette</a><span> </span><span class="jersey">11</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 0"</td>
+<td class="weight">190</td>
+<td class="birthday">03/05/1998</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Cavan Biggio" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/624415/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/cavan-biggio-624415">Cavan Biggio</a><span> </span><span class="jersey">8</span></td>
+<td class="bat-throw">L/R</td>
+<td class="height">6' 2"</td>
+<td class="weight">200</td>
+<td class="birthday">04/11/1995</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Matt Chapman" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/656305/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/matt-chapman-656305">Matt Chapman</a><span> </span><span class="jersey">26</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 0"</td>
+<td class="weight">215</td>
+<td class="birthday">04/28/1993</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Santiago Espinal" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/669289/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/santiago-espinal-669289">Santiago Espinal</a><span> </span><span class="jersey">5</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">5' 10"</td>
+<td class="weight">185</td>
+<td class="birthday">11/13/1994</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Vladimir Guerrero Jr." src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/665489/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/vladimir-guerrero-jr-665489">Vladimir Guerrero Jr.</a><span> </span><span class="jersey">27</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 2"</td>
+<td class="weight">245</td>
+<td class="birthday">03/16/1999</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Whit Merrifield" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/593160/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/whit-merrifield-593160">Whit Merrifield</a><span> </span><span class="jersey">15</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 1"</td>
+<td class="weight">195</td>
+<td class="birthday">01/24/1989</td>
+</tr>
+</tbody>
+</table>
+<table class="roster__table">
+<thead>
+<tr>
+<td colspan="2">Outfielders</td>
+<td class="bat-throw">B/T</td>
+<td class="height">Ht</td>
+<td class="weight">Wt</td>
+<td class="birthday">DOB</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Kevin Kiermaier" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/595281/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/kevin-kiermaier-595281">Kevin Kiermaier</a><span> </span><span class="jersey">39</span></td>
+<td class="bat-throw">L/R</td>
+<td class="height">6' 1"</td>
+<td class="weight">210</td>
+<td class="birthday">04/22/1990</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Nathan Lukes" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/664770/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/nathan-lukes-664770">Nathan Lukes</a><span> </span><span class="jersey">38</span></td>
+<td class="bat-throw">L/R</td>
+<td class="height">5' 11"</td>
+<td class="weight">180</td>
+<td class="birthday">07/12/1994</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="George Springer" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/543807/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/george-springer-543807">George Springer</a><span> </span><span class="jersey">4</span></td>
+<td class="bat-throw">R/R</td>
+<td class="height">6' 3"</td>
+<td class="weight">220</td>
+<td class="birthday">09/19/1989</td>
+</tr>
+<tr>
+<td class="player-thumb">
+<div class="player-thumb__back"><img alt="Daulton Varsho" src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/662139/headshot/silo/current"/></div>
+</td>
+<td class="info"><a href="https://www.mlb.com/player/daulton-varsho-662139">Daulton Varsho</a><span> </span><span class="jersey">25</span></td>
+<td class="bat-throw">L/R</td>
+<td class="height">5' 10"</td>
+<td class="weight">207</td>
+<td class="birthday">07/02/1996</td>
+</tr>
+</tbody>
+</table>
+<p><b></b></p>
+<br />Toronto Blue Jays << <a href='Toronto Blue Jays.html'>Previous</a> <a href='Tampa Bay Rays.html'>Next</a> >> Tampa Bay Rays</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
