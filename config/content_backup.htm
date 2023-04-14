@@ -37,13 +37,21 @@
 </div>
 <p>This program allows the user to perform basic arithmetic operations like addition, subtraction, multiplication, and division by selecting the desired operation from a menu and providing the required input values.</p>
 <p>Q:幫我寫一個python爬蟲程式</p>
-<p>A:</p>
-<p><span>python</span></p>
+<p>A:當然！以下是一個簡單的Python網路爬蟲範例，使用<code>requests</code>和<code>BeautifulSoup</code>函式庫，來從指定的網頁中獲取標題標籤的文字內容：</p>
+<div class="flex flex-grow flex-col gap-3">
+<div class="min-h-[20px] flex flex-col items-start gap-4 whitespace-pre-wrap">
+<div class="markdown prose w-full break-words dark:prose-invert light">
+<div class="bg-black rounded-md mb-4">
+<div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>python</span></div>
+</div>
+</div>
+</div>
+</div>
 <pre><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">import</span> requests
 <span class="hljs-keyword">from</span> bs4 <span class="hljs-keyword">import</span> BeautifulSoup
 
 <span class="hljs-comment"># 欲爬取的目標網址</span>
-url = <span class="hljs-string">'https://example.com/cities'</span>
+url = <span class="hljs-string">'https://example.com/'</span>
 
 <span class="hljs-comment"># 發送GET請求</span>
 response = requests.get(url)
@@ -53,13 +61,13 @@ response = requests.get(url)
     <span class="hljs-comment"># 解析HTML內容</span>
     soup = BeautifulSoup(response.text, <span class="hljs-string">'html.parser'</span>)
     
-    <span class="hljs-comment"># 從HTML標籤中獲取城市資料</span>
-    city_elements = soup.select(<span class="hljs-string">'.city'</span>)  <span class="hljs-comment"># 假設城市資料位於CSS class名稱為'city'的元素下</span>
-
-    <span class="hljs-comment"># 處理城市資料</span>
-    <span class="hljs-keyword">for</span> city_element <span class="hljs-keyword">in</span> city_elements:
-        city_name = city_element.text  <span class="hljs-comment"># 假設城市名稱位於該元素的文字內容中</span>
-        <span class="hljs-built_in">print</span>(city_name)  <span class="hljs-comment"># 印出城市名稱</span>
+    <span class="hljs-comment"># 從HTML標籤中獲取標題標籤的文字內容</span>
+    title_element = soup.select_one(<span class="hljs-string">'title'</span>)  <span class="hljs-comment"># 假設標題標籤為&lt;title&gt;標籤</span>
+    <span class="hljs-keyword">if</span> title_element:
+        title_text = title_element.text
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">'網頁標題：'</span>, title_text)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">'找不到標題標籤'</span>)
 <span class="hljs-keyword">else</span>:
     <span class="hljs-built_in">print</span>(<span class="hljs-string">'無法取得網頁資料，狀態碼：'</span>, response.status_code)</code></pre>
 </div>
