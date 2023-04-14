@@ -20,21 +20,21 @@
 <div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>python</span></div>
 </div>
 <div class="bg-black rounded-md mb-4">
-<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">add</span>(<span class="hljs-params">a, b</span>): <span class="hljs-keyword">return</span> a + b </code></div>
-<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">subtract</span>(<span class="hljs-params">a, b</span>): <span class="hljs-keyword">return</span> a - b </code></div>
-<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">multiply</span>(<span class="hljs-params">a, b</span>): <span class="hljs-keyword">return</span> a * b </code></div>
-<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">divide</span>(<span class="hljs-params">a, b</span>): <span class="hljs-keyword">return</span> a / b </code></div>
-<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">"Select operation."</span>) <span class="hljs-built_in">print</span>(<span class="hljs-string">"1. Add"</span>)</code></div>
-<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">"2. Subtract"</span>) <span class="hljs-built_in">print</span>(<span class="hljs-string">"3. Multiply"</span>) </code></div>
-<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">"4. Divide"</span>) </code></div>
-<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-python">choice = <span class="hljs-built_in">input</span>(<span class="hljs-string">"Enter choice(1/2/3/4): "</span>) </code></div>
-<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-python">num1 = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"Enter first number: "</span>)) </code></div>
-<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-python">num2 = <span class="hljs-built_in">float</span>(<span class="hljs-built_in">input</span>(<span class="hljs-string">"Enter second number: "</span>))</code></div>
-<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">if</span> choice == <span class="hljs-string">'1'</span>: <span class="hljs-built_in">print</span>(num1, <span class="hljs-string">"+"</span>, num2, <span class="hljs-string">"="</span>, add(num1, num2))</code></div>
-<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">elif</span> choice == <span class="hljs-string">'2'</span>: <span class="hljs-built_in">print</span>(num1, <span class="hljs-string">"-"</span>, num2, <span class="hljs-string">"="</span>, subtract(num1, num2)) </code></div>
-<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">elif</span> choice == <span class="hljs-string">'3'</span>: <span class="hljs-built_in">print</span>(num1, <span class="hljs-string">"*"</span>, num2, <span class="hljs-string">"="</span>, multiply(num1, num2)) </code></div>
-<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">elif</span> choice == <span class="hljs-string">'4'</span>: <span class="hljs-built_in">print</span>(num1, <span class="hljs-string">"/"</span>, num2, <span class="hljs-string">"="</span>, divide(num1, num2)) </code></div>
-<div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">else</span>: <span class="hljs-built_in">print</span>(<span class="hljs-string">"Invalid Input"</span>) </code></div>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">def add(a, b): return a + b
+def subtract(a, b): return a - b
+def multiply(a, b): return a * b
+def divide(a, b): return a / b
+print("Select operation.") print("1. Add")
+print("2. Subtract") print("3. Multiply")
+print("4. Divide")
+choice = input("Enter choice(1/2/3/4): ")
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+if choice == '1': print(num1, "+", num2, "=", add(num1, num2))
+elif choice == '2': print(num1, "-", num2, "=", subtract(num1, num2))
+elif choice == '3': print(num1, "*", num2, "=", multiply(num1, num2))
+elif choice == '4': print(num1, "/", num2, "=", divide(num1, num2))
+else: print("Invalid Input") </pre>
 </div>
 <p>This program allows the user to perform basic arithmetic operations like addition, subtraction, multiplication, and division by selecting the desired operation from a menu and providing the required input values.</p>
 <p></p>
@@ -49,29 +49,30 @@
 </div>
 </div>
 </div>
-<pre><code class="!whitespace-pre hljs language-python"><span class="hljs-keyword">import</span> requests
-<span class="hljs-keyword">from</span> bs4 <span class="hljs-keyword">import</span> BeautifulSoup
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import requests
+from bs4 import BeautifulSoup
 
-<span class="hljs-comment"># 欲爬取的目標網址</span>
-url = <span class="hljs-string">'https://example.com/'</span>
+# 欲爬取的目標網址
+url = 'https://example.com/'
 
-<span class="hljs-comment"># 發送GET請求</span>
+# 發送GET請求
 response = requests.get(url)
 
-<span class="hljs-comment"># 檢查網頁回應是否成功</span>
-<span class="hljs-keyword">if</span> response.status_code == <span class="hljs-number">200</span>:
-    <span class="hljs-comment"># 解析HTML內容</span>
-    soup = BeautifulSoup(response.text, <span class="hljs-string">'html.parser'</span>)
+# 檢查網頁回應是否成功
+if response.status_code == 200:
+    # 解析HTML內容
+    soup = BeautifulSoup(response.text, 'html.parser')
     
-    <span class="hljs-comment"># 從HTML標籤中獲取標題標籤的文字內容</span>
-    title_element = soup.select_one(<span class="hljs-string">'title'</span>)  <span class="hljs-comment"># 假設標題標籤為&lt;title&gt;標籤</span>
-    <span class="hljs-keyword">if</span> title_element:
+    # 從HTML標籤中獲取標題標籤的文字內容
+    title_element = soup.select_one('title')  # 假設標題標籤為&lt;title&gt;標籤
+    if title_element:
         title_text = title_element.text
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">'網頁標題：'</span>, title_text)
-    <span class="hljs-keyword">else</span>:
-        <span class="hljs-built_in">print</span>(<span class="hljs-string">'找不到標題標籤'</span>)
-<span class="hljs-keyword">else</span>:
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">'無法取得網頁資料，狀態碼：'</span>, response.status_code)</code></pre>
+        print('網頁標題：', title_text)
+    else:
+        print('找不到標題標籤')
+else:
+    print('無法取得網頁資料，狀態碼：', response.status_code)</pre>
+<pre><code class="!whitespace-pre hljs language-python"><br/><br/></code></pre>
 </div>
 </div>
 </div>
